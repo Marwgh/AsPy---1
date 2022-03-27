@@ -1,4 +1,4 @@
-from bottle import run , get , post , view ,static_file
+from bottle import  default_app,run , get , post , view ,static_file
 
 
 
@@ -34,7 +34,10 @@ def _():
   return static_file("app.css" , root=".")
 
 
-
-
-
-run(host="127.0.0.1" , port ="4545" , debug=True , reloader=True , server="paste")
+try:
+  # Production
+  import production
+  application = default_app()
+except:
+  # Development
+  run( host="127.0.0.1", port=3333, debug=True, reloader=True )
