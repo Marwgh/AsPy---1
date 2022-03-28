@@ -298,29 +298,21 @@ nav a:hover {
 
 
 
-#createMain {
+#createTweetContainer {
   color: white;
 }
 
-#createMain  > h1 {
+#createTweetContainer  > h1 {
   margin: 4vw 0 0 8vw;
   font-size: 2vw;
 }
 
-#createMain  > div {
-  height: 100vh;
-  width: 50vw;
-  background-color: black;
-  margin: auto;
-  margin-top: -6.2vw;
-  padding: 1vw;
-  padding-top: 5vw;
-}
-#createMain  > div p {
+
+#createTweetContainer  > div p {
   margin-top: 2vw;
 }
 
-#createMain form {
+#createTweetContainer div form {
   display: grid;
   background-color: white;
   width: 40vw;
@@ -331,26 +323,26 @@ nav a:hover {
 
 }
 
-#createMain form div {
+#createTweetContainer div form div {
   padding: 1vw;
   display: grid;
   
 }
 
-#createMain form div input{
+#createTweetContainer div form div input{
   padding: 1vw;
   border-radius: 0.4vw;
   border: none;
   background-color: rgba(128, 128, 128, 0.486);
 }
-#createMain form div textarea{
+#createTweetContainer div form div textarea{
   padding: 1vw;
   border-radius: 0.4vw;
   border: none;
   background-color: rgba(128, 128, 128, 0.486);
 }
 
-#createMain form button {
+#createTweetContainer div form button {
   appearance: none;
   border: none;
   border-radius: 0.4vw;
