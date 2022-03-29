@@ -1,3 +1,4 @@
+from tkinter import EXCEPTION
 from bottle import view , get , redirect , request ,response
 import jwt
 import g
@@ -6,7 +7,6 @@ import g
 @view("tweet.html")
 
 def _():
-
   if len(g.SESSIONS) < 1 :
     return redirect("/login?error=invalidS")
   if not (request.get_cookie("jwt")) :
@@ -20,6 +20,8 @@ def _():
       redirect("/login?error=invalidS")
       
   return dict(tweets=g.TWEETS)
+
+  
 
 
   
